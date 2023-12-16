@@ -1,0 +1,175 @@
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: -10px 50px;
+    margin-bottom: -60px;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.input-fields {
+    margin-top: 10px;
+    border: none;
+    border-bottom: 1px solid rgb(155, 153, 153);
+    padding: 7px;
+    width: 100%;
+}
+
+.input-fields:focus {
+    outline: none !important;
+    border-bottom: 2px solid purple;
+}
+
+#signIn-box {
+    text-align: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 30%;
+    height: 80%;
+    /* margin: 10px; */
+    padding: 30px;
+    margin-left: 33%;
+    margin-top: 5%;
+    background-color: white;
+}
+
+
+/* body {
+    background-image: url('https://images.pexels.com/photos/2912108/pexels-photo-2912108.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+*/
+
+body {
+    background-color: rgb(255, 248, 233);
+}
+
+.input-box>div {
+    text-align: left;
+    margin-top: 30px;
+}
+
+#login-btn {
+    width: 100%;
+    background-color: white;
+    border-radius: 15px;
+    color: purple;
+    border: 1px solid purple;
+    margin-top: 25px;
+    padding: 10px;
+}
+
+#goto-signUp-page {
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+    color: purple;
+}
+
+#goto-signUp-page>a {
+    text-decoration: none;
+}
+
+#login-btn:hover {
+    background-color: plum;
+}
+
+#googleLogin {
+    background-color: white;
+    border: 1px solid grey;
+    margin: 0px 40%;
+}
+
+#googleLogin>img {
+    width: 100%;
+}
+
+#home {
+    cursor: pointer;
+}
+
+
+/* 
+@media only screen and (min-width: 377px) and (max-width:769px) {
+    #signup-box {
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        width: 80%;
+        height: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+    }
+    #googleLogin {
+        margin: 0px 43%;
+    }
+    #googleLogin>img {
+        width: 100%;
+    }
+    #navbar {
+        margin: 0;
+        margin-bottom: -5px;
+    }
+} */
+
+@media only screen and (max-width:769px) {
+    /* body {
+        background-image: url('https://images.pexels.com/photos/2912108/pexels-photo-2912108.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+        background-color: lightpink;
+    } */
+    #signIn-box {
+        width: 80%;
+        height: 80%;
+        margin: 20% auto;
+    }
+    #googleLogin {
+        margin: 0px 43%;
+    }
+    #googleLogin>img {
+        width: 100%;
+    }
+    #navbar {
+        margin: 0;
+        margin-bottom: -5px;
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fcf1f1;
+    margin: 15% auto;
+    padding: 30px 20px;
+    border: 1px solid #888;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+@media only screen and (min-width: 769px) and (max-width:1015px) {
+    #signIn-box {
+        width: 65%;
+        height: 80%;
+        margin: 12% auto;
+    }
+}
+
+@media only screen and (min-width:1016px) {
+    #signIn-box {
+        margin: 5% auto;
+    }
+}

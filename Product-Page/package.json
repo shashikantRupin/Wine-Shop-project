@@ -1,0 +1,11 @@
+{
+  "name": "wine-shop-project",
+  "version": "1.0.0",
+  "description": "it is a wine e-commerce website",
+  "main": "vines",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wani ms",
+  "license": "ISC"
+}

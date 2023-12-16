@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mine Wine | SIgn Up</title>
+    <link rel="stylesheet" href="./signUp.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/17cb428520.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+</body>
+
+<div id="navbar">
+    <h1>MINE WINE</h1>
+    <h5 id="home">
+        <i class="fa-solid fa-house fa-xl"></i>
+    </h5>
+</div>
+
+<div id="main">
+    <!-- <img src="https://images.pexels.com/photos/2912108/pexels-photo-2912108.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="wine-images"> -->
+    <!-- <p>Home</p> -->
+    <div id="signup-box">
+
+        <h1 id="heading"> Sign Up</h1>
+
+        <div id="google-img">
+            <button id="googleLogin">
+        <img src="https://play-lh.googleusercontent.com/1-hPxafOxdYpYZEOKzNIkSP43HXCNftVJVttoo4ucl7rsMASXW3Xr6GlXURCubE1tA=w3840-h2160-rw" alt="">
+        <!-- Login with Google -->
+    
+    </button>
+
+        </div>
+        <div id="signup-body">
+            <form action="" id="registration">
+                <div id="name" class="input-box">
+                    <div>
+                        <i class="fa-solid fa-circle-user"></i>
+                        <label for="">Full Name</label>
+                    </div>
+                    <input type="text" name="" id="name-input" class="input-fields" required>
+                </div>
+                <div id="email" class="input-box">
+                    <div>
+                        <i class="fa-solid fa-envelope"></i>
+                        <label for="">Email</label>
+                    </div>
+                    <input type="text" name="" id="email-input" class="input-fields" required>
+                </div>
+                <div id="mobile" class="input-box">
+                    <div>
+                        <i class="fa-solid fa-mobile-screen"></i>
+                        <label for="">Mobile Number</label>
+                    </div>
+                    <input type="text" name="" id="mobile-input" class="input-fields" required>
+                </div>
+                <div id="password" class="input-box">
+                    <div>
+                        <i class="fa-solid fa-key"></i>
+                        <label for="">Enter Password</label>
+                    </div>
+                    <input type="password" name="" id="password-input" class="input-fields" required>
+                </div>
+                <button type="button" id="signup-btn"> Sign Up</button>
+                <div id="goto-signIn-page">
+                    <a href="../signIn/signIn.html">
+                        <p>Already signed up?</p>
+                    </a>
+                    <a href="../signIn/signIn.html">
+                        <p>Sign in now!</p>
+                    </a>
+                </div>
+            </form>
+
+            <div id="myModal" class="modal" style="display: none;">
+                <div class="modal-content">
+                    <p>SignUp successfully !!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</html>
+
+<script type="module" src="./signUp.js"></script>

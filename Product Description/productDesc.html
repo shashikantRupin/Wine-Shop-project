@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="shortcut icon" href="https://d29fhpw069ctt2.cloudfront.net/icon/image/120748/preview.svg" type="image/x-icon">
+    <link rel="stylesheet" href="productDesc.css">
+    <link rel="stylesheet" href="../Components/navbar.css">
+    <link rel="stylesheet" href="../Components/footer.css">
+</head>
+
+<body>
+        <div id="main">
+            <div>
+                <p>Mine Wine</p>
+            </div>
+            <div>
+                    <ul class="menu">
+                      <li><a href="#">CATEGORY</a>
+                        <ul class="submenu">
+                          <li><a href="#">Red Wine</a></li>
+                          <li><a href="#">Rose Wine</a></li>
+                          <li><a href="#">White Wine</a></li>
+                          <li><a href="#">Sparkling Wine</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">ABOUT US</a></li>
+                      <li><a href="#">SETS & GIFTS</a></li>
+                      <li><a href="#">PROMOTIONS</a></li>
+                    </ul>              
+                <input type="text" name="" id="navbar_inp" oninput="debounc(getdata,500)" placeholder="Type To Search....">
+            </div>
+            <div>
+                <button id="gotosignin"><i class="fa-solid fa-user"></i></button>
+                <button id="gotocart"><i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+            <div id="hamburger">
+                <button><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+        <div id="debouncdata">
+        
+        </div>
+    <div id="first">
+        <div>
+            <img id="img_of_vine" src=""
+                alt="Vine Bottel Image">
+        </div>
+        <div>
+            <div id="description">
+                <h1 id="name_of_vine"></h1>
+                <h3>Category : <span id="category_of_vine">Red Vine</span></h3>
+                <h3>Country : <span id="country_of_vine"> South Africa</span></h3>
+                <h3>Rs. <span id="price_of_vine">1995</span></h3>
+            </div>
+            <div id="buttons">
+                <div>
+                    <div>
+                        <button id="cart_minus"><i class="fa-solid fa-minus"></i></button>
+                        <p id="cart_count">1</p>
+                        <button id="cart_plus"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                    <div>
+                        <button id="Add_to_cart_btn"><i class="fa-solid fa-cart-plus"></i><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <button id="Buy_now_btn"><i class="fa-solid fa-shop"></i><i class="fa-solid fa-buy"></i> Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div id="contents">
+                <p><span>Vintage :</span> 2021</p>
+                <p><span>Type :</span> Red</p>
+                <p><span>Grape Variety Used :</span> Merlot</p>
+                <p><span>Farming :</span> Sustainable Viticulture</p>
+                <p><span>Bottle Size :</span> 750ml</p>
+                <p><span>Alcohol Level :</span> 13.5%</p>
+                <p><span>Wine Closure :</span> Screw Cap</p>
+                <p><span>Wine Style :</span> Medium Bidied</p>
+                <p><span>Producer :</span> Man Family Wines</p>
+                <p><span>Serving Temperature :</span> 16°C</p>
+            </div>
+            <div id="test">
+                <p><span>Tasting Notes :</span> An elegant, classic style of Merlot with distinctive plum flavours and soft
+                    tannins. Dark ruby-red with aromas of plum, cherry and tobacco spices, complemented by savoury
+                    and earthy notes typical of Merlot. On the palate, the wine is soft with gentle tannins and
+                    hints of dark chocolate and blueberry. The finish is long and lingering. This medium-bodied wine
+                    will be wonderful just by itself or paired with roast chicken, lamb stew, lasagne and barbeques</p>
+            </div>
+        </div>
+    </div>
+    <p>You May Also Like......</p>
+    <div id="second">
+        <div>
+            <div>
+                <img src="https://d3lhatfimi1ec.cloudfront.net/1E62B4AA-5FF5-4E1E-9CF2-21F6F144B9E4/Products/Medium/SAN-ROMAN-BODEGAS-PRIMA-1-2019.jpg?V=30062023115659" alt="">
+            </div>
+            <div>
+                <p>Bodegas Maurodos, Prima 2019</p>
+            </div>
+            <div>
+                <p>Red Wine</p>
+                <p>Rs.4995</p>
+            </div>
+            <div>
+                <button class="recc_cart_btn"><i class="fa-solid fa-cart-plus"></i>Add To Cart</button>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="https://d3lhatfimi1ec.cloudfront.net/1E62B4AA-5FF5-4E1E-9CF2-21F6F144B9E4/Products/Medium/ac16c98c-b12b-4652-a765-60ebbf7b91e9.jpg?V=30062023115659" alt="">
+            </div>
+            <div>
+                <p>Tenuta Sant Antonio, Scaia Corvina Red 2019</p>
+            </div>
+            <div>
+                <p>Red Wine</p>
+                <p>Rs.3195</p>
+            </div>
+            <div>
+                <button class="recc_cart_btn"><i class="fa-solid fa-cart-plus"></i>Add To Cart</button>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="https://d3lhatfimi1ec.cloudfront.net/1E62B4AA-5FF5-4E1E-9CF2-21F6F144B9E4/Products/Medium/RW-Pinotage.jpg?V=30062023115659" alt="">
+            </div>
+            <div>
+                <p>Robertson Winery, Pinotage 2022</p>
+            </div>
+            <div>
+                <p>Red Wine</p>
+                <p>Rs.1595</p>
+            </div>
+            <div>
+                <button class="recc_cart_btn"><i class="fa-solid fa-cart-plus"></i>Add To Cart</button>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="https://d3lhatfimi1ec.cloudfront.net/1E62B4AA-5FF5-4E1E-9CF2-21F6F144B9E4/Products/Medium/Man%20Bosstok%20Pinotage_NV_large.jpg?V=30062023115659" alt="">
+            </div>
+            <div>
+                <p>Man Family Wines, Pinotage, Bosstok 2020</p>
+            </div>
+            <div>
+                <p>Red Wine</p>
+                <p>Rs.1995</p>
+            </div>
+            <div>
+                <button class="recc_cart_btn"><i class="fa-solid fa-cart-plus"></i>Add To Cart</button>
+            </div>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Product already in cart! 🤷‍♂️</p>
+        </div>
+      </div>
+    <footer>
+        
+    </footer>
+</body>
+<script type="module" src="productDesc.js"></script>
+<script src="../Components/navbar.js"></script>
+</html>

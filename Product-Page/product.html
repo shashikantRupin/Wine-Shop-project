@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./component/navbar.css">
+    <link rel="stylesheet" href="./component/footer.css">
+    
+
+</head>
+<body>
+   
+   <div id="navbar">
+    <!-- //navbar here -->
+    
+   </div> 
+
+   <div id ="search-div">
+    
+    <div id="icon">
+      <img src="icons8-search-50.png" alt="">
+  
+    </div>
+    
+    <div id="inp-div">
+      <input type="text" name="" id="search-inp" oninput="mySearch()" placeholder="All Wines">
+    </div>
+
+   </div>
+
+
+   <div id="above-div">
+
+    <div id="category-1">
+      <h2>White Wine</h2>
+    </div>
+
+    <div id="category-2">
+      <h2>Red Wine</h2>
+    </div>
+
+    <div id="category-3">
+      <h2>Rose Wine</h2>
+    </div>
+
+    <div id="category-4">
+      <h2>Rose & Sparkling</h2>
+    </div>
+
+
+
+ </div>
+
+
+   <div id="container"> 
+
+
+      <div id="sideDiv">
+
+
+       <div>
+        <select  id="select-price" onchange = "sortByPrice()" >
+          <option value="">Sort By: Price</option>
+          <option value="htl">High to Low</option>
+          <option value="lth">Low to High</option>
+        </select>
+       </div>     
+      
+    <div>
+      <select  id="select-country" onchange="filterbyCountry()">
+        <option value="">By country</option>
+        <option value="">All</option>
+        <option value="South Africa">South Africa</option>
+        <option value="Italy">Italy</option>
+        <option value="India">India</option>
+        <option value="France">France</option>
+
+      </select>
+    </div>
+        
+       <div>
+         <select  id="discount" onchange="filterbyDiscount()">
+            <option value="">Discount</option>
+            <option value="30">30% OFF</option>
+            <option value="55">55% OFF</option>
+            <option value="75">75% OFF</option>
+
+         </select>
+       </div>
+       
+     <div>
+      <select  id="brand">
+        <option value="">Category</option>
+        <option value="">Beardo</option>
+        <option value="">Versace</option>
+    </select>
+     </div>
+     
+
+    <div>
+      <select  id="brand">
+        <option value="">Collections</option>
+        <option value="">Beardo</option>
+        <option value="">Versace</option>
+      </select>
+    </div>
+  
+
+    <div>
+      <select  id="brand">
+        <option value="">Pack Size</option>
+        <option value="">Beardo</option>
+        <option value="">Versace</option>
+      </select>
+    </div>
+   
+   <div>
+    <select  id="brand">
+      <option value="">Bottle price</option>
+      <option value="">Beardo</option>
+      <option value="">Versace</option>
+    </select>
+   </div>
+   
+
+ 
+
+    </div>
+
+
+      <div id="product-div">
+        <!-- //append data here -->
+      </div>
+     
+      
+   </div>
+
+   <!-- //pagination buttons -->
+    <div id="button">
+
+     
+      <button id="prev"><<</button>
+      <h2 id="page"></h2>
+      <button id="next">>></button>
+
+   </div>
+
+     
+
+  <div id="footer">
+    <!-- //footer here -->
+  </div>
+
+</body>
+</html>
+
+
+<script src="product.js"></script>
+<script type="module" src="exProduct.js"></script>
+<script src="./component/nav.js"></script>
+<script src="./component/navbar.js"></script>
+<script src="./component/footer.js"></script>

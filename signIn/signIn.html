@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mine Wine | Sign In</title>
+    <link rel="stylesheet" href="./signIn.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/17cb428520.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="navbar">
+        <h1>MINE WINE</h1>
+        <h5 id="home">
+            <i class="fa-solid fa-house fa-xl"></i>
+        </h5>
+    </div>
+
+
+    <div id="main">
+
+        <div id="signIn-box">
+            <h1 id="heading"> Sign In</h1>
+
+
+            <div id="google-img">
+                <button id="googleLogin">
+            <img src="https://play-lh.googleusercontent.com/1-hPxafOxdYpYZEOKzNIkSP43HXCNftVJVttoo4ucl7rsMASXW3Xr6GlXURCubE1tA=w3840-h2160-rw" alt="">
+            <!-- Login with Google -->
+        
+        </button>
+
+            </div>
+            <div id="signIn-body">
+                <form action="" id="login">
+
+
+                    <div id="email" class="input-box">
+                        <div>
+                            <i class="fa-solid fa-envelope"></i>
+                            <label for="">Email</label>
+                        </div>
+                        <input type="text" name="" id="email-input" class="input-fields">
+                    </div>
+
+                    <div id="password" class="input-box">
+                        <div>
+                            <i class="fa-solid fa-key"></i>
+                            <label for="">Enter Password</label>
+                        </div>
+                        <input type="password" name="" id="password-input" class="input-fields">
+                    </div>
+                    <button type="button" id="login-btn"> Sign In</button>
+
+                    <div id="goto-signUp-page">
+                        <a href="../signUp/signUp.html">
+                            <p>Not yet signed up?</p>
+                        </a>
+                        <a href="../signUp/signUp.html">
+                            <p>Sign up now!</p>
+                        </a>
+                    </div>
+
+
+                </form>
+
+                <div id="myModal" class="modal" style="display: none;">
+                    <div class="modal-content">
+                        <p>SignIn successfully !!</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script type="module" src="./signIn.js"></script>

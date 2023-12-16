@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/32979f5c51.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  
+    <title>Online Wine Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <!-- <link rel="stylesheet" href=""> -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <link rel="stylesheet" href="index.css">
+    <!-- <link rel="stylesheet" href="./Components/navbar.css"> -->
+    <!-- <link rel="stylesheet" href="./Components/footer.css"> -->
+</head>
+<body>
+
+    <!-- pop up starts-->
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div>
+                <p>Are You 21 Years Old ?</p>
+            </div>
+            <div id="btn">
+                <button id="model_yes" class="model_yes">YES</button>
+              <button id="model_no" class="model_no">NO</button>
+            </div>
+        </div>
+      </div>
+
+      <div id="Modal" class="modal">
+        <div class="modal-content">
+            <div id="btn">
+                <button id="model_no" class="close"><i class="fa-solid fa-xmark"></i></button>
+              </div>
+            <div>
+                <p>Oops ! You Can,t Access The Website</div>
+        </div>
+      </div>
+
+    <!-- pop up ends -->
+
+
+    <!-- navbar start -->
+        <div id="nav_up"></div>
+        
+        <div id="main">
+            <div>
+                <p>Mine Wine</p>
+            </div>
+            <div>
+                    <ul class="menu">
+                      <li><a href="Product-Page/product.html">CATEGORY</a>
+                        <ul class="submenu">
+                          <li><a href="Product-Page/product.html">Red Wine</a></li>
+                          <li><a href="Product-Page/product.html">Rose Wine</a></li>
+                          <li><a href="Product-Page/product.html">White Wine</a></li>
+                          <li><a href="Product-Page/product.html">Sparkling Wine</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">ABOUT US</a></li>
+                      <li><a href="#">SETS & GIFTS</a></li>
+                      <li><a href="#">PROMOTIONS</a></li>
+                    </ul>              
+                <input type="text" name="" id="navbar_inp" oninput="debounc(getdata,500)" placeholder="Type To Search....">
+            </div>
+            <div>
+                <button><a href="signIn/signIn.html" class="logincart"><i class="fa-solid fa-user"></i></a></button>
+                <button><a href="Cart Detail/cart.html" class="logincart"><i class="fa-solid fa-bag-shopping"></i></a></button>
+            </div>
+            <div id="hamburger">
+                <button><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+        <div id="debouncdata"></div>
+
+    <!-- navbar ends -->
+
+<main>
+
+    <div class="wineyard"><h1>Wines from the best vineyards</h1></div>
+
+    
+    <!-- slide carousel starts -->
+
+
+    <div class="slider">
+        <div class="slides">
+          <div class="slide">
+            <img src="https://www.cascinacollina.com/wp-content/uploads/revslider/fullscreen-slider-1/DSC_9729-2-1024x682.jpg" alt="">
+            <div class="content">
+                <div>
+                <h1>DISCOVER OUR NEW ARRIVALS <br></h1>
+                <p>Unveiling the allure of our new wine arrivals, each brand a revelation of taste, taking you on an unforgettable journey of discovery. Indulge in the finest flavors that await, a testament to our dedication to excellence in every pour.</p>
+                <br><button class="shopnow">Shop Now</button>
+                </div>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="https://media.istockphoto.com/id/640078294/photo/valentines-day-greeting-card.jpg?s=612x612&w=0&k=20&c=_Sd0umhkNA4IPVr_dRMltHhbRg4qiEIzI816VcBCt2U=" alt=" ">
+            <div class="content">
+                <div>
+                <h1>GIFT COLLECTION 2023 <br></h1>
+                <p>Step into a world of enchantment with our mesmerizing gift collection of 2023, where the artistry of wines unfolds in captivating elegance. Delight your senses and ignite the spirit of celebration with our curated selection, where every sip becomes a magical journey into the realm of fine wines.</p>
+                <br><button class="shopnow">Shop Now</button>
+                </div>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="https://stonefishinternational.com.au/wp-content/uploads/2016/03/Vineyard-Slider-Background.jpg" alt="">
+            <div class="content">
+                <div>
+                <h1>RUSTIC & ORGANIC <br></h1>
+                <p>Discover the pure essence of nature with our rustic and organic wines - a sip that takes you to vineyard landscapes, embracing authenticity and exquisite flavors. Indulge in the truest expression of earth's bounty with every glass.</p>
+                <br><br><button class="shopnow">Shop Now</button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="slider-controls">
+        <input type="radio" name="slider-radio" id="radio1" checked>
+        <label for="radio1"></label>
+        <input type="radio" name="slider-radio" id="radio2">
+        <label for="radio2"></label>
+        <input type="radio" name="slider-radio" id="radio3">
+        <label for="radio3"></label>
+      </div>
+
+    <!-- slider carousel ends -->
+
+
+<!-- what would you like -->
+<h5 class="heading">What Would you Like ?</h5>
+
+<!-- images -->
+
+<div class="container1">
+    <div class="prod first">
+        <img src="images/product-3.png" alt="Red">
+        <h5><a href="Product-Page/product.html">Red</a></h5>
+    </div>
+    <div class="prod">
+        <img src="images/product-2.png" alt="">
+        <h5><a href="Product-Page/product.html">White</a></h5>
+    </div>
+    <div class="prod">
+        <img src="images/product-1.png" alt="">
+        <h5><a href="Product-Page/product.html">Rose</a></h5>
+    </div>
+    <div class="prod">
+        <img src="images/product-4.png" alt="">
+        <h5><a href="Product-Page/product.html">Sparkling</a></h5>
+    </div>
+</div>
+
+<h5 class="heading">Sets & Gifts</h5>
+<div class="container2">
+    <div class="gift first">
+        <img src="https://m.media-amazon.com/images/I/718ti+v27VL._AC_UF350,350_QL80_.jpg" class="gifts" alt="Red">
+        <h5><a href="Product-Page/product.html">Wine Glasses</a></h5>
+    </div>
+    <div class="gift">
+        <img src="https://salut.co.uk/wp-content/uploads/2022/11/jpeg.-3-btl-Italian-red-scaled.jpg" alt="" class="gifts">
+        <h5><a href="Product-Page/product.html">Wine Sets</a></h5>
+    </div>
+    <div class="gift">
+        <img src="https://i.pinimg.com/originals/47/fd/05/47fd0550218bef0bbc3657aead388856.png" alt="" class="gifts">
+        <h5><a href="Product-Page/product.html">Decanters</a></h5>
+    </div>
+</div>
+<a href=""><button class="gift_button"> View All</button></a>
+
+
+
+<div class="container4">
+    <div class="subs1">
+        <h1>Wine Subscription</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Porro numquam maiores molestiae eius optio. Similique officia 
+            repellendus voluptatum dicta sed rerum inventore dolor dolore facere, amet quisquam 
+            alias incidunt cumque.</p>
+        <button>More about Subscription</button>
+    </div>
+    <div class="subs2">
+        <img src="https://www.namhpac.org/wp-content/uploads/2019/09/Red-Wine-201807-013.jpg" alt="">
+    </div>
+</div>
+
+<div class="container3">
+    <div class="about1">
+        <img src="https://cdn.pixabay.com/photo/2014/12/02/03/11/grapes-553462_1280.jpg" alt="">
+    </div>
+    <div class="about2">
+        <h1>About Us</h1>
+        <h4>Let's get acquainted !</h4>
+        <p>We are a group of wine enthusiasts who love everything about wine. from the vineyards to the bottle. Our passion for wine has taken us to different parts of the world, exploring different wineries and discovering unique flavors.
+
+            <span><br> <br></span>
+            We are not just wine sellers, we are wine lovers, and our mission is to help you discover and appreciate the beauty of wine. We believe that everyone can find their perfect bottle, whether you are a wine connoisseur or a novice. Our knowledgeable staff is always available to guide you in selecting the perfect wine for any occasion</p>
+    </div>
+</div>
+
+
+<h5 class="heading">Blog and News</h5>
+
+<div class="container5">
+    <div><img src="https://assets.architecturaldigest.in/photos/600843631dd783c692024b58/master/w_1600%2Cc_limit/Sula-Wine.jpg" alt="">
+        <p>12/06/2023</p>
+        <h5>Enjoy a fun new way to get to know wine</h5></div>
+
+    <div><img src="https://www.framehazelpark.com/wp-content/uploads/2203FS03_frame-stories_pairing_1063-scaled.jpg" alt="">
+        <p>18/06/2023</p>
+        <h5> Wine and Oysters. A rule just waiting to be broken</h5></div>
+
+    <div><img src="https://cdn.britannica.com/55/123855-050-65B599D7/Moet-champagne-Chandon.jpg" alt="">
+        <p>23/6/2023</p>
+        <h5>A brief (troubled) history of champange</h5></div>
+
+    <div><img src="https://io.dropinblog.com/uploaded/blogs/34240221/files/featured/wine-for-people-who-dont-like-wine-feature.jpg" alt="">
+        <p>27/06/2023</p>
+        <h5>The Wines we have on our own table right now</h5></div>
+</div>
+
+<div class="container6">
+    <div>       
+        <img class="believe" src="images/wineslide12.png" alt="">
+            <div>
+                <h5>We believe that wine is more than just a drink. <span class="redfont"> It's an experience, a journey through the senses, an exploration of flavors and aromas </span> that captivate the palate and transport us to distant vineyards.</h5>
+            </div>       
+    </div>
+</div>
+
+</main>
+
+<footer>
+    <div id="footer">
+        <div>
+            <div>
+               <p><span>CATALOG</span></p>
+                <p>Red Vine</p>
+                <p>White Vine</p>
+                <p>Rose Vine</p>
+                <p>Sparkling Vines</p>
+                <p>Promotions</p>
+                <p>Sets And Gifts</p>
+            </div>
+            <div>
+                <p><span>SUPPORT</span></p>
+                <p>FAQ</p>
+                <p>Terms Of use</p>
+                <p>Delivery And Payment</p>
+                <p>Return & Exchange</p>
+            </div>
+            <div>
+                <p><span>OUR COMPANY</span></p>
+                <p>About Us</p>
+                <p>Contact Us</p>
+                <p>Reviews</p>
+                <p>Blog And News</p>
+                <p>Loyalty Program</p>
+                <p>Vine Subscription</p>
+            </div>
+            <div>
+                <p><span>CONTACTS</span></p>
+                <p>0 800 123 456</p>
+                <p>info@minewine.com</p>
+                <p><span>ADDRESS :</span></p>
+                <p>Ukrain</p>
+                <p>Kyiv,Bazhana St. 17</p>
+                <p><span>WORKING HOURS : </span></p>
+                <p>Mon-Fri 09:00-20:00</p>
+                <p>Sat-Sun 10:00-18:00</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <p>Mine Vine</p>
+            </div>
+            <div>
+                <p>We Only Sell Alcohol To Adults 21+</p>
+                <p>@MineVine 2023. All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
+
+
+<script type="module" src="main.js"></script>
+<!-- <script type="module" src="Components/navbar.js"></script> -->
+<script src="./components/navbar.js"></script>

@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;100;200;300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+body{
+    background-color: #fff8e9;
+    font-family: 'Poppins', sans-serif;
+}
+#first + p{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 30px;
+    color: #b43d41;
+}
+#first{
+    display: flex;
+    width: 90%;
+    gap: 50px;
+    margin: auto;
+    margin-top: 80px;
+    border: 1px solid grey;
+}
+#first > div:first-child{
+    border-right: 1px solid grey;
+}
+#first > div > img{ /*This Is the Bottle Image*/
+    mix-blend-mode: darken;
+}
+#description{
+    margin-top: 30px;
+}
+#description > h1{
+    color: #b43d41;
+}
+#description > h3{
+    margin-top: 20px;
+    font-weight: 200;
+}#description > h3:nth-child(4){
+    font-size: 30px;
+}
+#description > h3 > span{
+    font-weight: 600;
+}
+#buttons{
+    margin-top: 20px;
+
+}
+.fa-solid{
+    margin-right: 10px;
+}
+#buttons > div{
+    display: flex;
+    margin-top: 20px;
+    gap: 30px;
+}
+#buttons > div > div{
+    display: flex;
+    gap:16px;
+    align-items: center;
+    font-size: 26px;
+}
+
+#buttons > div > div > button{
+    padding: 10px 10px 10px 20px;
+
+}
+#buttons > div > div:nth-child(2) > button{
+    padding: 10px 30px;
+}
+#buttons > div:nth-child(2) > div > button{
+    padding: 10px 130px;
+}
+#buttons > div > div > button{
+    background-color: #b62e32;
+    border: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.3s;
+    font-size: 18px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.fa-cart-plus {
+    display: none;
+}
+#buttons > div > div > #Add_to_cart_btn:hover .fa-cart-plus{
+    display: block;
+}
+#buttons > div > div > #Add_to_cart_btn:hover .fa-cart-shopping{
+    display: none;
+}
+#buttons > div > div > #Add_to_cart_btn{
+    display: flex;
+}
+#buttons + div{
+    margin-top: 20px;
+}
+#Buy_now_btn{
+    padding: 10px 198px;
+    align-items: center;
+}
+
+button:hover{
+    background-color: #940a0e;
+}
+#contents{
+    width: 90%;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    padding: 20px;
+
+}
+#contents > p{
+    font-weight: 600;
+}
+#contents > p > span{
+    font-weight: 200;
+}
+#test{
+    margin: 20px 0;
+    width: 90%;
+    padding: 0 20px;
+
+}
+#test > p{
+    font-weight: 200;
+    line-height: 30px;
+}
+#test > p > span{
+    font-weight: 600;
+}
+#second{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#second > div{
+    width: 22%;
+    border: 1px solid gray;
+    padding: 10px;
+    cursor: pointer;
+}
+#second > div > div{
+    margin-bottom: 20px;
+}
+#second > div > div:first-child{
+    width: 50%;
+    margin: auto;
+}
+#second > div > div:first-child > img{
+    width: 100%;
+    mix-blend-mode: darken;
+}
+#second > div > div:nth-child(2){
+    /* text-align: center; */
+    font-size: 20px;
+    font-weight: 600;
+    color: #b43d41;
+}
+#second > div > div:nth-child(3){
+    /* width: 90%;
+    margin: auto; */
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    align-items: center;
+}
+#second > div > div:nth-child(3) > p:nth-child(2){
+    font-size: 25px;
+    font-weight: 600;
+}
+.recc_cart_btn{
+    display: block;
+    margin: auto;
+    padding: 10px 60px;
+}
+#second > div > div:nth-child(4) > button{
+    background-color: #b62e32;
+    border: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.3s;
+    font-size: 18px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    margin: auto;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .modal-content {
+    background-color: #fcf1f1;
+    margin: 15% auto;
+    padding: 30px 20px;
+    border: 1px solid #888;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+.product {
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Close button style for the modal */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+
+
+@media only screen and (max-width: 600px) {
+    #first{
+        flex-direction: column;
+    }
+    #first > div:first-child{
+        width: 50%;
+        margin: auto;
+    }
+    #first > div:first-child > img{
+        width: 100%;
+    }
+    #first > div:first-child{
+        border-right: none;
+    }
+    #description{
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+    #buttons > div{
+        align-items: center;
+        margin-top: 10px;
+    }
+    #buttons > div{
+        flex-direction: column;
+        margin: auto;
+    }
+    #buttons > div:nth-child(2){
+        align-items: center;
+        margin-top: 20px;
+    }
+    #buttons > div:nth-child(2) > div > button{
+        padding: 10px 35px;
+    }
+    #contents{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #test > p{
+        line-height: 20px;
+    }
+    #second{
+        flex-direction: column;
+        gap: 20px;
+    }
+    #second > div{
+        width: 90%;
+    }
+  }
