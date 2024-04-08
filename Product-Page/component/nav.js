@@ -23,9 +23,9 @@ function Navbar(){
         <button><i class="fa-solid fa-user"></i></button>
         <button><i class="fa-solid fa-bag-shopping"></i></button>
     </div>
-    // <div id="hamburger">
-    //     <button><i class="fa-solid fa-bars"></i></button>
-    // </div>
+    <div id="hamburger">
+        <button><i class="fa-solid fa-bars"></i></button>
+    </div>
 </div>
 <div id="debouncdata">
 
