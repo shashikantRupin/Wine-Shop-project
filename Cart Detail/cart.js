@@ -42,9 +42,7 @@ function displayProduct(data) {
         let priceDiv = document.createElement("div")
         priceDiv.setAttribute("id", "priceDiv")
 
-        // let mrp = document.createElement("p")
-        // mrp.setAttribute("id", "mrp")
-        // mrp.textContent = "₹" + elem.mrp
+       
 
         let price = document.createElement("p")
         price.setAttribute("id", "price")
