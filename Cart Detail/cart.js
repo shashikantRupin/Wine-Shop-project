@@ -1,13 +1,7 @@
 let productArr = JSON.parse(localStorage.getItem("cart-product")) || []
 
 if(productArr.length === 0){
-    // document.querySelector("#cart_detail").innerText = "There are no any products in cart. Click on continue for shopping"
-    // let cont = document.createElement("button")
-    // cont.textContent = "Continue"
-    // cont.style.border = "none"
-    // cont.style.backgroundColor = "Red"
-    // cont.style.color = "White"
-    // cont.style.width = "20%"
+    
 }else{
     displayProduct(productArr)
     calTotal()
