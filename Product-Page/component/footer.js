@@ -37,16 +37,16 @@ const foo = ()=>{
             <p>Mon-Fri 09:00-20:00</p>
             <p>Sat-Sun 10:00-18:00</p>
         </div>
-//     </div>
-//     <div>
-//         <div>
-//             <p>Mine Vine</p>
-//         </div>
-//         <div>
-//             <p>We Only Sell Alcohol To Adults 21+</p>
-//             <p>@MineVine 2023. All Rights Reserved</p>
-//         </div>
-//     </div>
-// </div>`
+    </div>
+    <div>
+        <div>
+            <p>Mine Vine</p>
+        </div>
+        <div>
+            <p>We Only Sell Alcohol To Adults 21+</p>
+            <p>@MineVine 2023. All Rights Reserved</p>
+        </div>
+    </div>
+</div>`
 }
 export default foo;
